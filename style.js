@@ -38,7 +38,7 @@ function renderTodoList(){
 
     const html = `
     <div> ${count} ${"."}${ name}</div>
-    <div>${dueDate}</div>
+    <div>&nbsp&nbsp${dueDate}</div>
     <button class="delete-buttons" onclick="
         list1.splice(${i} , 1);
         renderTodoList();
