@@ -42,7 +42,7 @@ function renderTodoList(){
     <button class="delete-buttons" onclick="
         list1.splice(${i} , 1);
         renderTodoList();
-    ">Delete</button>`;
+    "><i class="fa-solid fa-trash"></i></button>`;
     
     listTodoHTML += html;
     count += 1;
