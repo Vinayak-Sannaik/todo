@@ -4,13 +4,6 @@ const list1 = [{
 }];
 
 renderTodoList();
-/*
-function keyPress(event){
-if (event.key === "Enter"){
-  addTodoList();
-}
-}
-*/
 document.querySelector('.js-text-button').addEventListener('keydown',(event) =>{
   if (event.key === "Enter"){
     addTodoList();
@@ -35,7 +28,6 @@ function addTodoList(){
   renderTodoList();
 }
 
-
 function renderTodoList(){
   let listTodoHTML = '';
   let count = 1;
@@ -45,13 +37,13 @@ function renderTodoList(){
     const dueDate = todoObject.dueDate ;
 
     const html = `
-    <div> ${count} ${"."} &nbsp${ name}</div>
+    <div> ${count} ${"."}${ name}</div>
     <div>${dueDate}</div>
     <button class="delete-buttons" onclick="
         list1.splice(${i} , 1);
         renderTodoList();
     ">Delete</button>`;
-
+    
     listTodoHTML += html;
     count += 1;
   }
