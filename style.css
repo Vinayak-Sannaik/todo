@@ -32,6 +32,7 @@ body{
 
 .js-add-button{
   background-color: rgb(11, 11, 14);
+  border-radius: 12px;
   color: white;
   cursor: pointer;
   border: none;
@@ -41,6 +42,7 @@ body{
 
 .delete-buttons{
   background-color: rgb(108, 108, 141);
+  border-radius: 12px;
   color: rgb(15, 14, 14);
   cursor: pointer;
   border: none;
