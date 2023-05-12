@@ -8,26 +8,16 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="container">
-  <h1 class="heading">Todo list </h1>
+  <div class="container">
+    <h1 class="heading">Todo list </h1>
   
-  <div class="todo-input-grid">
-
+    <div class="todo-input-grid">
       <input type="text" placeholder="add todo" class="js-text-button">
-
-      <!-- <input type="text" placeholder="add todo" class="js-text-button" onkeydown="
-      keyPress(event);
-      "> --> 
-      
-      <input type="date" placeholder="enterDate" class="js-date-button">
-
+      <input placeholder="Due Date" class="js-date-button" type="text" onfocus="(this.type='date')" id="date" />
       <button class="js-add-button">Add</button>
-
-  </div>
-
-  <div class="listOfWorks"></div>
-</div>  
+    </div>
+    <div class="listOfWorks"></div>
+  </div>  
   <script src="style.js"></script>
-  
 </body>
 </html>
